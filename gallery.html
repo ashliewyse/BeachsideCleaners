@@ -1,18 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Contact | Beachside Cleaners</title>
-  <meta name="description" content="Contact Beachside Cleaners for residential cleaning, yard cleanup, and home repairs." />
-
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-
-<!-- HEADER -->
 <header class="header">
   <div class="container header-inner">
 
@@ -29,65 +14,9 @@
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="pricing.html">Pricing</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html" aria-current="page">Contact</a>
+      <a href="gallery.html" aria-current="page">Gallery</a>
+      <a href="contact.html">Contact</a>
     </nav>
 
   </div>
 </header>
-
-<!-- MAIN -->
-<main class="container section">
-  <h1>Contact Us</h1>
-  <p>Request a quote or ask a question. We’ll get back to you shortly.</p>
-
-  <form id="contactForm" novalidate>
-
-    <label for="name">Full Name</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">Email Address</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
-
-    <button type="submit" class="btn">Send Message</button>
-
-    <p id="successMessage" class="success" hidden>
-      ✅ Thank you! Your message has been sent.
-    </p>
-
-  </form>
-</main>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container">
-    <p>&copy; 2025 Beachside Cleaners</p>
-  </div>
-</footer>
-
-<!-- JAVASCRIPT -->
-<script>
-  const form = document.getElementById("contactForm");
-  const successMessage = document.getElementById("successMessage");
-
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    // Show browser validation errors BEFORE submit
-    if (!form.checkValidity()) {
-      form.reportValidity();
-      successMessage.hidden = true;
-      return;
-    }
-
-    // Show success message
-    successMessage.hidden = false;
-    form.reset();
-  });
-</script>
-
-</body>
-</html>
