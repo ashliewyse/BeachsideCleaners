@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +14,6 @@
       text-align: center;
       color: white;
     }
-
     .logo {
       height: 120px;
       width: 120px;
@@ -21,18 +21,11 @@
       object-fit: cover;
       margin-bottom: 1rem;
     }
-
     h1 {
       font-family: 'Pacifico', cursive;
       font-size: 3rem;
       margin: 0;
       color: white;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
     }
   </style>
 </head>
@@ -48,91 +41,21 @@
     <li><strong>Menu</strong></li>
   </ul>
   <ul>
-  <li><a href="#about">About</a></li>
-  <li><a href="services.html">Services</a></li>
-  <li><a href="#contact" role="button">Contact</a></li>
-</ul>
+    <li><a href="index.html" class="secondary">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="tips.html">Pro Tips</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html" role="button">Contact</a></li>
+  </ul>
 </nav>
 
 <main class="container">
-  <div class="grid">
-    <!-- About Section -->
-    <section id="about">
-      <hgroup>
-        <h2>About Us</h2>
-        <h3>Family-Run Full-Service Cleaning</h3>
-      </hgroup>
-      <p>
-        At Beachside Cleaners, we are a family-run team that does it all.
-        Whether your home needs a fresh scrub, a quick fix, or a major yard rescue,
-        we show up ready to roll with tools in hand and smiles on our faces.
-      </p>
-      <figure>
-        <img src="images/0A131FBA-673C-4C15-8D2F-F40888197A3F.png" alt="Happy team of workers" />
-        <figcaption>Our Beachside Cleaners team — happy to help!</figcaption>
-      </figure>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services">
-      <hgroup>
-        <h2>Our Services</h2>
-        <h3>Flexible Packages to Meet Your Needs</h3>
-      </hgroup>
-      <p>We offer standard cleaning, deep cleaning, move-in/move-out packages and more.</p>
-      <figure>
-        <img src="images/services.jpg" alt="Our team offering home services" />
-        <figcaption>Our team offers everything from cleaning to yard work and painting.</figcaption>
-      </figure>
-    </section>
-  </div>
+  <!-- Home content goes here -->
 </main>
 
-<!-- Contact Section -->
-<section id="contact" class="container">
-  <hgroup>
-    <h2>Contact Us</h2>
-    <h3>We're ready when you are</h3>
-  </hgroup>
-  <form class="grid" onsubmit="return showConfirmation(event)">
-    <input type="text" id="firstname" name="firstname" placeholder="Your Name" required />
-    <input type="email" id="email" name="email" placeholder="Your Email" required />
-    <button type="submit">Send Message</button>
-    <p id="confirmation" style="display: none; color: green;">Message sent! Thank you!</p>
-  </form>
-</section>
-
-<!-- Gallery Section -->
-<section class="container gallery">
-  <h2>Before & After Gallery</h2>
-  <div class="grid">
-    
-    <figure>
-      <img src="images/IMG_1535.jpeg" alt="House After Cleaning" />
-      <figcaption>House – After Cleaning</figcaption>
-    </figure>
-    <figure>
-      <img src="images/IMG_1485.jpeg" alt="Yard Before Clean-Up" />
-      <figcaption>Yard – Before Snow Removal</figcaption>
-    </figure>
-    <figure>
-      <img src="images/IMG_1453.jpeg" alt="Yard After Clean-Up" />
-      <figcaption>Yard – After Snow Removal</figcaption>
-    </figure>
-  </div>
-</section>
-
 <footer class="container">
-  <small><a href="#">© 2025 Beachside Cleaners</a> • <a href="#">Privacy Policy</a></small>
+  <small>© 2025 Beachside Cleaners</small>
 </footer>
-
-<script>
-  function showConfirmation(event) {
-    event.preventDefault();
-    document.getElementById('confirmation').style.display = 'block';
-    return false;
-  }
-</script>
 
 </body>
 </html>
