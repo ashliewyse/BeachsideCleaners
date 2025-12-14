@@ -4,8 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pro Cleaning Tips - Beachside Cleaners</title>
+
+  <!-- PicoCSS for layout -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+
+  <!-- Font for header style -->
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+
   <style>
     header.custom-header {
       background-color: #0077b6;
@@ -13,6 +18,7 @@
       text-align: center;
       color: white;
     }
+
     .logo {
       height: 120px;
       width: 120px;
@@ -20,26 +26,34 @@
       object-fit: cover;
       margin-bottom: 1rem;
     }
+
     h1 {
       font-family: 'Pacifico', cursive;
       font-size: 3rem;
       margin: 0;
       color: white;
     }
-    .tips-image {
-      max-width: 100%;
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    iframe {
       border-radius: 8px;
-      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
 
+<!-- Header -->
 <header class="custom-header">
   <img src="logo.jpg" alt="Beachside Cleaners Logo" class="logo" />
   <h1>Beachside Cleaners</h1>
 </header>
 
+<!-- Navigation Menu -->
 <nav class="container-fluid">
   <ul>
     <li><strong>Menu</strong></li>
@@ -53,13 +67,10 @@
   </ul>
 </nav>
 
+<!-- Main Content -->
 <main class="container">
   <section>
     <h2>Pro Cleaning Tips</h2>
-    
-    <!-- Your image here -->
-    <img src="images/professional-cleaning-tips.webp" alt="Professional Cleaning Tips" class="tips-image" />
-
     <ul>
       <li>Use vinegar and baking soda for natural drain cleaning.</li>
       <li>Dust top to bottom — always clean high first.</li>
@@ -67,27 +78,28 @@
       <li>Lemon + salt cleans sinks and disposals.</li>
       <li>Don't forget baseboards and corners!</li>
     </ul>
- <section>
-  <h2>Watch Our Cleaning Team in Action</h2>
-  <div style="text-align: center;">
-    <iframe 
-      src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1645724469730121%2F&show_text=false&width=267&t=0" 
-      width="267" 
-      height="476" 
-      style="border:none;overflow:hidden" 
-      scrolling="no" 
-      frameborder="0" 
-      allowfullscreen="true" 
-      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-    </iframe>
-  </div>
-</section>
+
+    <!-- Embedded Facebook Video -->
+    <h2>Watch Our Cleaning Team in Action</h2>
+    <div class="video-container">
+      <iframe 
+        src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1645724469730121%2F&show_text=false&width=267&t=0" 
+        width="267" 
+        height="476" 
+        style="border:none;overflow:hidden" 
+        scrolling="no" 
+        frameborder="0" 
+        allowfullscreen="true" 
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+      </iframe>
+    </div>
+  </section>
 </main>
 
+<!-- Footer -->
 <footer class="container">
   <small>© 2025 Beachside Cleaners</small>
 </footer>
 
 </body>
 </html>
-
