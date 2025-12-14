@@ -5,13 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Our Services - Beachside Cleaners</title>
 
-  <!-- Pico CSS for styling -->
+  <!-- Styles and Fonts -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
-  <!-- Pacifico Font -->
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
 
   <style>
-    .custom-header {
+    header.custom-header {
       background-color: #0077b6;
       padding: 2.5rem 1rem;
       text-align: center;
@@ -33,14 +32,21 @@
       color: white;
     }
 
-    nav a {
+    nav.custom-nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav.custom-nav a {
       color: white;
-      margin: 0 1rem;
       font-weight: bold;
       text-decoration: none;
     }
 
-    nav a:hover {
+    nav.custom-nav a:hover {
       text-decoration: underline;
     }
 
@@ -58,11 +64,11 @@
 </head>
 <body>
 
-  <!-- Header with logo and navigation -->
+  <!-- Header (matching homepage) -->
   <header class="custom-header">
     <img src="logo.jpg" alt="Beachside Cleaners Logo" class="logo" />
     <h1>Beachside Cleaners</h1>
-    <nav>
+    <nav class="custom-nav">
       <a href="index.html">Home</a>
       <a href="index.html#about">About</a>
       <a href="services.html">Services</a>
@@ -70,6 +76,7 @@
     </nav>
   </header>
 
+  <!-- Main Services Section -->
   <main class="container">
     <section id="services">
       <hgroup>
